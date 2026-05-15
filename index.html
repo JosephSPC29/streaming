@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamAWS - Tu plataforma de Video</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>StreamAWS</h1>
+            <input type="text" id="search" placeholder="Buscar videos...">
+        </nav>
+    </header>
+
+    <main id="app-container">
+        <!-- Catálogo Dinámico -->
+        <section id="video-catalog">
+            <h2>Videos Recientes</h2>
+            <div class="grid-container" id="video-grid"></div>
+        </section>
+
+        <!-- Aside de Recomendaciones (Requerimiento 6) -->
+        <aside id="recommendations">
+            <h3>Te puede interesar</h3>
+            <div id="rec-list"></div>
+        </aside>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

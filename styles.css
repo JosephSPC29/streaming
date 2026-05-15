@@ -1,0 +1,44 @@
+/* Mobile First */
+:root {
+    --primary: #232f3e; /* AWS Dark */
+    --accent: #ff9900;  /* AWS Orange */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Estructura Principal con Grid */
+#app-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+}
+
+/* Componentes con Flexbox */
+.video-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+    #app-container {
+        grid-template-columns: 3fr 1fr;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
